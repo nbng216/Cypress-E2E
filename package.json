@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RaffyRod/cypress-practice.git"
+    "url": "git+https://github.com/nbng216/Cypress-E2E.git"
   },
-  "author": "Raffy Rodriguez, Alfredo Polanco & Edgar Ysabel",
+  "author": "nbng",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RaffyRod/cypress-practice/issues"
+    "url": "https://github.com/nbng216/Cypress-E2E.git"
   },
-  "homepage": "https://github.com/RaffyRod/cypress-practice#readme",
+  "homepage": "https://github.com/nbng216/Cypress-E2E.git",
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
     "cypress": "^12.5.1",
