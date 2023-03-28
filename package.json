@@ -1,0 +1,34 @@
+{
+  "name": "cypress-practice",
+  "version": "1.0.0",
+  "description": "Cypress practice",
+  "main": "index.js",
+  "scripts": {
+    "pretest-windows": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports",
+    "pretest": "rm -rf cypress/reports && mkdir cypress/reports",
+    "lint": "eslint cypress/e2e && eslint cypress/support/pageObjects",
+    "lint-fix": "npm run lint -- --fix",
+    "test": "npm run pretest && npx cypress run  --reporter-options=reportFilename=OrangeHRM Report",
+    "test-windows": "npm run pretest-windows && npx cypress run cypress/e2e/Orange  --reporter-options=reportFilename=OrangeHRM Report --browser chrome",
+    "ci-test": "npm run pretest && npx cypress run cypress/e2e/Orange/*.js --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaffyRod/cypress-practice.git"
+  },
+  "author": "Raffy Rodriguez, Alfredo Polanco & Edgar Ysabel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaffyRod/cypress-practice/issues"
+  },
+  "homepage": "https://github.com/RaffyRod/cypress-practice#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.5.1",
+    "eslint": "^8.29.0"
+  },
+  "dependencies": {
+    "@ngneat/falso": "^6.3.0",
+    "cypress-mochawesome-reporter": "^3.2.3"
+  }
+}
